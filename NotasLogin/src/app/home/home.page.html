@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Student Grades
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-list>
+    <ion-item *ngFor="let grade of grades">
+      <ion-label>{{ grade.grade }}</ion-label>
+    </ion-item>
+  </ion-list> -->
+
+  <ion-button (click)="redirectToLogin()">Go to Login</ion-button>
+
+
+  <ion-item>
+    <ion-label position="floating">Student ID</ion-label>
+    <ion-input [(ngModel)]="studentId"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Grade 1 (20%)</ion-label>
+    <ion-input type="number" [(ngModel)]="grade1"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Grade 2 (20%)</ion-label>
+    <ion-input type="number" [(ngModel)]="grade2"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Grade 3 (20%)</ion-label>
+    <ion-input type="number" [(ngModel)]="grade3"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Grade 4 (10%)</ion-label>
+    <ion-input type="number" [(ngModel)]="grade4"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Grade 5 (30%)</ion-label>
+    <ion-input type="number" [(ngModel)]="grade5"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="saveGrade()">Save Grades</ion-button>
+
+  <div *ngIf="totalGrade !== null" class="total-grade">
+    <p>Total Grade: {{ totalGrade }}</p>
+  </div>
+</ion-content>
+
+
+
+

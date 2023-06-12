@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.example.app',
-  appName: 'photo-gallery',
+  appId: 'io.ionic.starter',
+  appName: 'ionic-firebase-notas',
   webDir: 'www',
   server: {
     androidScheme: 'https'
