@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Firebase Image App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="full" (click)="takePicture()">Take Picture</ion-button>
+  <img *ngIf="imageUrl !== undefined" [src]="imageUrl!" alt="Captured Image">
+</ion-content>
+
