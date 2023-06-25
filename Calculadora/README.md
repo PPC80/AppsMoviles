@@ -1,16 +1,11 @@
-# trigo4
+Repositorio de aplicación móvil para calculadora
 
-A new Flutter project.
+![Alt Text](capturas/1.png)
 
-## Getting Started
+![Alt Text](capturas/2.png)
 
-This project is a starting point for a Flutter application.
+![Alt Text](capturas/3.png)
 
-A few resources to get you started if this is your first Flutter project:
+![Alt Text](capturas/4.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Alt Text](capturas/5.png)
