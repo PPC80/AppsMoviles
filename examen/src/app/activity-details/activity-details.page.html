@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Activity Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ activity?.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ activity?.description }}</p>
+      <p>Date: {{ activity?.date }}</p>
+
+      <ion-button expand="full" (click)="goToEditActivity(activity?.id)">
+        Edit Activity
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

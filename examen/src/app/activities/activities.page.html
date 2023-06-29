@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Activities</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let activity of activities">
+      <ion-thumbnail slot="start">
+        <img [src]="activity.image" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ activity.title }}</h2>
+        <p>{{ activity.description }}</p>
+      </ion-label>
+      <ion-button (click)="goToActivityDetails(activity.id)" expand="block" color="primary">
+        View Details
+      </ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="goToCreateActivity()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
+

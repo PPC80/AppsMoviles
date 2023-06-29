@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Create Activity</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Create New Activity</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Title</ion-label>
+        <ion-input type="text" [(ngModel)]="activity.title"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Description</ion-label>
+        <ion-textarea [(ngModel)]="activity.description"></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Date</ion-label>
+        <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="activity.date"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Image</ion-label>
+        <input type="file" accept="image/*" (change)="onImageSelected($event)">
+      </ion-item>
+
+      <ion-button expand="full" (click)="createActivity()">Create Activity</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+

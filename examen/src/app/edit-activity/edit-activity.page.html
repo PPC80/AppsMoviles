@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Edit Activity</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="activity">
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Title</ion-label>
+      <ion-input [(ngModel)]="activity.title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Description</ion-label>
+      <ion-textarea [(ngModel)]="activity.description"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Date</ion-label>
+      <ion-input type="date" [(ngModel)]="activity.date"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="updateActivity()">Save Changes</ion-button>
+</ion-content>
