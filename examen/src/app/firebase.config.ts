@@ -1,10 +1,10 @@
 export const firebaseConfig = {
-    apiKey: "AIzaSyDo3gA5ayjW2uY36Jzow-oLL96ddA7cM98",
-    authDomain: "app2022b.firebaseapp.com",
-    databaseURL: "https://app2022b-default-rtdb.firebaseio.com",
-    projectId: "app2022b",
-    storageBucket: "app2022b.appspot.com",
-    messagingSenderId: "430051088078",
-    appId: "1:430051088078:web:d2489c60cfcc8d3af0629f",
-    measurementId: "G-18BCZEN1EZ"
+    projectId: 'app2023a-8bce1',
+    appId: '1:264804504232:web:6ac9a0a926d047084ce89d',
+    databaseURL: 'https://app2023a-8bce1-default-rtdb.firebaseio.com',
+    storageBucket: 'app2023a-8bce1.appspot.com',
+    locationId: 'us-central',
+    apiKey: 'AIzaSyBP7yHnIyUbMAhw1etMcArZyfqaNHhVHXE',
+    authDomain: 'app2023a-8bce1.firebaseapp.com',
+    messagingSenderId: '264804504232',
 };
