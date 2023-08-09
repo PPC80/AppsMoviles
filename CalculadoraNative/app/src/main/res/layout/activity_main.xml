@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4F9F9698"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="17dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtResultTrig"
+            android:layout_width="120dp"
+            android:layout_height="85dp"
+            android:background="#1B000000"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="#1B000000"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/botones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="#F1F1F1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn7"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="7"
+                android:src="@drawable/ic_7" />
+
+            <ImageButton
+                android:id="@+id/btn8"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="8"
+                android:src="@drawable/ic_8" />
+
+            <ImageButton
+                android:id="@+id/btn9"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="9"
+                android:src="@drawable/ic_9" />
+
+            <ImageButton
+                android:id="@+id/btnDividir"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="/"
+                android:src="@drawable/ic_divide" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn4"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="4"
+                android:src="@drawable/ic_4" />
+
+            <ImageButton
+                android:id="@+id/btn5"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="5"
+                android:src="@drawable/ic_5" />
+
+            <ImageButton
+                android:id="@+id/btn6"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="6"
+                android:src="@drawable/ic_6" />
+
+            <ImageButton
+                android:id="@+id/btnMultiplicar"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="*"
+                android:src="@drawable/ic_multiply" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn1"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="1"
+                android:src="@drawable/ic_1" />
+
+            <ImageButton
+                android:id="@+id/btn2"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="2"
+                android:src="@drawable/ic_2" />
+
+            <ImageButton
+                android:id="@+id/btn3"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="3"
+                android:src="@drawable/ic_3" />
+
+            <ImageButton
+                android:id="@+id/btnSuma"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="+"
+                android:src="@drawable/ic_add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnClear"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="C"
+                android:src="@drawable/ic_clear" />
+
+            <ImageButton
+                android:id="@+id/btn0"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="0"
+                android:src="@drawable/ic_0" />
+
+            <ImageButton
+                android:id="@+id/btnIgual"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="="
+                android:src="@drawable/ic_equals" />
+
+            <ImageButton
+                android:id="@+id/btnMenos"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_weight="0"
+                android:tag="-"
+                android:src="@drawable/ic_subtract" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/extras"
+        android:layout_width="202dp"
+        android:layout_height="209dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toEndOf="@+id/botones"
+        android:background="#F1F1F1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chkMostrar"
+                android:layout_width="77dp"
+                android:layout_height="52dp"
+                android:text="Extras"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutRbtns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@id/rbtnRad">
+
+                <RadioButton
+                    android:id="@+id/rbtnRad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Radianes"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rbtnGrados"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grados"
+                    android:textSize="15sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSpinner"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="265dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string-array name="funciones">
+        <item>Funciones Extras</item>
+        <item>Sen</item>
+        <item>Cos</item>
+        <item>Tan</item>
+        <item>ASen</item>
+        <item>ACos</item>
+        <item>ATan</item>
+        <item>Raiz</item>
+        <item>Potencia ^2</item>
+    </string-array>
+</resources>
